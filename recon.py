@@ -324,7 +324,7 @@ def portita():
 def gitexposed():
     print('[blue][bold]Git Exposed[/][/]')
     time.sleep(2.2)
-    os.system('cat all_'+args.domain+'.txt | xargs -I@ sh -c \'goop @ -f\'')
+    os.system('cat alive.txt | xargs -I@ sh -c \'goop @ -f\'')
 
 # -----------------------------
 
@@ -400,7 +400,7 @@ elif args.git:
 
 elif args.checkurl:
     path_txt()
-    check_url()
+    checkurl()
     
 elif args.brute:
     check_url()
